@@ -41,14 +41,15 @@ h1{margin-top:8px;color:#8e3568;font-size:clamp(30px,7vw,46px)}
 .photo {
     display: block;
     width: 150px;
-    height: 150px;
+    max-width: 950px;
+    height: 200px;
     object-fit: contain;
     object-position: center;
-    margin: 0 auto 15px;
-    border-radius: 20px;
+    margin: 0 auto 30px;
+    border-radius: 40px;
     border: 5px solid white;
     background: #fff0f5;
-    box-shadow: 0 8px 25px rgba(180,70,150,.3);
+    box-shadow: 0 90px 25px rgba(209, 17, 158, 0.3);
 }
 .notebook{
   margin:22px auto;width:100%;padding:20px 16px;text-align:left;
@@ -63,7 +64,7 @@ background:linear-gradient(135deg,#fff0f5,#fff8df);border:1px dashed #ff83a9}
 .big-heart{display:block;font-size:42px;margin-top:8px}
 button{margin-top:18px;border:0;padding:14px 25px;border-radius:30px;
 background:linear-gradient(135deg,#ff5f9e,#a86cff);color:white;
-font-size:15px;font-weight:bold;cursor:pointer;box-shadow:0 8px 20px rgba(180,70,150,.3);
+font-size:15px;font-weight:bold;cursor:pointer;box-shadow:0 8px 20px rgba(207, 37, 162, 0.3);
 transition:.3s}
 button:hover{transform:scale(1.05)}
 button:focus-visible{outline:3px solid #8e3568;outline-offset:4px}
@@ -90,7 +91,7 @@ animation:confettiFall 3s linear forwards}
 @keyframes confettiFall{to{transform:translateY(110vh) rotate(720deg);opacity:0}}
 @media(max-width:500px){
   body{padding:14px 10px}.card{padding:25px 16px;border-radius:25px}
-  h1{font-size:32px}.photo{width:105px;height:105px}
+  h1{font-size:32px}.photo{width:160px;height:160px}
   .notebook{padding:16px 12px}.notebook p{font-size:14px}
   .second-card{padding:28px 18px}.sorry-word{font-size:48px;letter-spacing:1px}
   button{width:100%;padding:14px 15px}
