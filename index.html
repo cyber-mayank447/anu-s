@@ -4,69 +4,60 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sorry Anuu 💖</title>
+<title>Sorry Annu 💖</title>
+
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 html,body{min-height:100%;width:100%}
 body{
-  min-height:100vh;padding:20px 12px;
+  min-height:100vh;padding:18px 12px;
   display:flex;justify-content:center;align-items:center;
   font-family:"Noto Sans Devanagari","Mangal",Arial,sans-serif;
   background:linear-gradient(135deg,#ffd6e7,#d9c7ff,#c8f7ff);
   overflow-x:hidden;color:#444;
 }
-.heart{
-  position:fixed;bottom:-50px;z-index:1;font-size:24px;
-  animation:float 8s linear infinite;opacity:0;pointer-events:none;
-}
+.heart{position:fixed;bottom:-50px;z-index:1;font-size:24px;
+  animation:float 8s linear infinite;opacity:0;pointer-events:none}
 .h1{left:5%;animation-delay:0s}.h2{left:20%;animation-delay:2s}
 .h3{left:45%;animation-delay:4s}.h4{left:70%;animation-delay:1s}
 .h5{left:90%;animation-delay:3s}
-@keyframes float{
-  0%{transform:translateY(0) scale(.5) rotate(0);opacity:0}
-  20%{opacity:1}
-  100%{transform:translateY(-115vh) scale(1.4) rotate(360deg);opacity:0}
-}
+@keyframes float{0%{transform:translateY(0) scale(.5) rotate(0);opacity:0}
+20%{opacity:1}100%{transform:translateY(-115vh) scale(1.4) rotate(360deg);opacity:0}}
 .card{
   position:relative;z-index:5;width:100%;max-width:550px;
-  padding:32px 25px;text-align:center;border-radius:30px;
-  background:rgba(255,255,255,.86);backdrop-filter:blur(15px);
+  padding:30px 22px;text-align:center;border-radius:30px;
+  background:rgba(255,255,255,.88);backdrop-filter:blur(15px);
   border:2px solid white;box-shadow:0 25px 60px rgba(80,40,100,.28);
   animation:cardIn 1s ease;
 }
-@keyframes cardIn{
-  from{opacity:0;transform:scale(.7) translateY(60px)}
-  to{opacity:1;transform:scale(1) translateY(0)}
-}
-.card:before{
-  content:"";position:absolute;inset:-5px;z-index:-1;border-radius:35px;
-  background:linear-gradient(45deg,#ff65a3,#a86cff,#62e8ff,#ff65a3);
-  filter:blur(15px);opacity:.55;
-}
-.emoji{font-size:62px}
+@keyframes cardIn{from{opacity:0;transform:scale(.7) translateY(60px)}
+to{opacity:1;transform:scale(1) translateY(0)}}
+.card:before{content:"";position:absolute;inset:-5px;z-index:-1;
+border-radius:35px;background:linear-gradient(45deg,#ff65a3,#a86cff,#62e8ff,#ff65a3);
+filter:blur(15px);opacity:.55}
+.emoji{font-size:60px}
 h1{margin-top:8px;color:#8e3568;font-size:clamp(30px,7vw,46px)}
 .subtitle{margin-top:7px;color:#555;font-size:15px}
+.photo{
+  display:block;width:120px;height:120px;object-fit:cover;
+  margin:20px auto 12px;border-radius:50%;
+  border:5px solid white;box-shadow:0 8px 25px rgba(180,70,150,.3);
+}
 .notebook{
-  margin:22px auto;width:94%;padding:20px 16px;text-align:left;
+  margin:22px auto;width:100%;padding:20px 16px;text-align:left;
   background:#fffef5;border-left:7px solid #ff729f;border-radius:18px;
   box-shadow:0 8px 22px rgba(0,0,0,.12);
   transform:none;animation:none;
 }
 .notebook p{margin:8px 0;color:#444;line-height:1.8;font-size:15px}
 .highlight{color:#e94076;font-weight:bold}
-.warning{
-  padding:12px;margin-top:12px;text-align:center;border-radius:15px;
-  background:linear-gradient(135deg,#fff0f5,#fff8df);
-  border:1px dashed #ff83a9;
-}
+.warning{padding:12px;margin-top:12px;text-align:center;border-radius:15px;
+background:linear-gradient(135deg,#fff0f5,#fff8df);border:1px dashed #ff83a9}
 .big-heart{display:block;font-size:42px;margin-top:8px}
-button{
-  margin-top:18px;border:0;padding:14px 25px;border-radius:30px;
-  background:linear-gradient(135deg,#ff5f9e,#a86cff);color:white;
-  font-size:15px;font-weight:bold;cursor:pointer;
-  box-shadow:0 8px 20px rgba(180,70,150,.3);
-  transition:.3s;
-}
+button{margin-top:18px;border:0;padding:14px 25px;border-radius:30px;
+background:linear-gradient(135deg,#ff5f9e,#a86cff);color:white;
+font-size:15px;font-weight:bold;cursor:pointer;box-shadow:0 8px 20px rgba(180,70,150,.3);
+transition:.3s}
 button:hover{transform:scale(1.05)}
 button:focus-visible{outline:3px solid #8e3568;outline-offset:4px}
 .sparkle{position:absolute;font-size:20px}
@@ -74,7 +65,7 @@ button:focus-visible{outline:3px solid #8e3568;outline-offset:4px}
 .s3{bottom:10%;left:12%}.s4{bottom:12%;right:12%}
 .second-card{
   position:fixed;z-index:20;width:calc(100% - 24px);max-width:500px;
-  max-height:90vh;overflow-y:auto;padding:35px 25px;text-align:center;
+  max-height:90vh;overflow-y:auto;padding:30px 22px;text-align:center;
   border-radius:30px;background:rgba(255,255,255,.97);
   box-shadow:0 25px 80px rgba(60,20,80,.35);
   transform:scale(0) rotate(-8deg);opacity:0;pointer-events:none;
@@ -82,29 +73,19 @@ button:focus-visible{outline:3px solid #8e3568;outline-offset:4px}
 }
 .second-card.show{transform:scale(1) rotate(0);opacity:1;pointer-events:auto}
 .second-card h2{color:#8e3568;font-size:clamp(25px,6vw,32px);margin-bottom:15px}
-.sorry-word{
-  font-family:Arial,sans-serif;font-size:clamp(42px,12vw,78px);
-  font-weight:900;letter-spacing:3px;line-height:1.1;
-  color:#e94076;text-shadow:3px 3px 0 #ffd6e7;
-  overflow-wrap:anywhere;
-}
+.sorry-word{font-family:Arial,sans-serif;font-size:clamp(42px,12vw,78px);
+font-weight:900;letter-spacing:3px;line-height:1.1;color:#e94076;
+text-shadow:3px 3px 0 #ffd6e7;overflow-wrap:anywhere}
 .second-card p{color:#444;line-height:1.9;font-size:16px}
 .close-btn{background:linear-gradient(135deg,#ff719f,#9b6cff)}
-.confetti{
-  position:fixed;top:-20px;z-index:50;pointer-events:none;
-  animation:confettiFall 3s linear forwards;
-}
-@keyframes confettiFall{
-  to{transform:translateY(110vh) rotate(720deg);opacity:0}
-}
+.confetti{position:fixed;top:-20px;z-index:50;pointer-events:none;
+animation:confettiFall 3s linear forwards}
+@keyframes confettiFall{to{transform:translateY(110vh) rotate(720deg);opacity:0}}
 @media(max-width:500px){
-  body{padding:16px 10px}
-  .card{padding:27px 16px;border-radius:25px}
-  h1{font-size:32px}
-  .notebook{width:100%;padding:16px 12px}
-  .notebook p{font-size:14px;line-height:1.8}
-  .second-card{padding:28px 18px}
-  .sorry-word{font-size:48px;letter-spacing:1px}
+  body{padding:14px 10px}.card{padding:25px 16px;border-radius:25px}
+  h1{font-size:32px}.photo{width:105px;height:105px}
+  .notebook{padding:16px 12px}.notebook p{font-size:14px}
+  .second-card{padding:28px 18px}.sorry-word{font-size:48px;letter-spacing:1px}
   button{width:100%;padding:14px 15px}
 }
 @media(prefers-reduced-motion:reduce){
@@ -112,6 +93,7 @@ button:focus-visible{outline:3px solid #8e3568;outline-offset:4px}
 }
 </style>
 </head>
+
 <body>
 
 <div class="heart h1">💖</div>
@@ -127,16 +109,20 @@ button:focus-visible{outline:3px solid #8e3568;outline-offset:4px}
   <div class="sparkle s4">🌟</div>
 
   <div class="emoji">🧸💖</div>
-  <h1>Sorry Anuu 🌸</h1>
+  <h1>Sorry Annu 🌸</h1>
   <div class="subtitle">Meri sabse cute best friend ke liye ❤️</div>
 
+  <!-- Photo: folder 2, file 1.jpg -->
+  <img class="photo" src="2/1.jpg" alt="Anushka ki photo"
+       onerror="this.style.display='none'">
+
   <div class="notebook">
-    <p>💌 <span class="highlight">Dear Anuu,</span></p>
+    <p>💌 <span class="highlight">Dear Annu,</span></p>
     <p>Yaar, aaj dil se ek baat kehni hai... 🥺</p>
     <p>
       Agar meri kisi baat se tumhe bura laga ho,
       ya meri wajah se tum naraz ho gayi ho,
-      toh I'm really sorry, Anuu. ❤️
+      toh I'm really sorry, Annu. ❤️
     </p>
     <p>
       Tum meri bahut special best friend ho.
@@ -157,16 +143,19 @@ button:focus-visible{outline:3px solid #8e3568;outline-offset:4px}
   </div>
 
   <div class="big-heart">❤️</div>
-  <button onclick="openCard()">Anuu, ek surprise hai 💌✨</button>
+  <button onclick="openCard()">Annu, ek surprise hai 💌✨</button>
 </div>
 
 <div class="second-card" id="secondCard" role="dialog"
      aria-modal="true" aria-labelledby="surpriseTitle">
   <div class="emoji">🌸🧸🌸</div>
-  <h2 id="surpriseTitle">ANUU, PLEASE... 💖</h2>
+  <h2 id="surpriseTitle">ANNU, PLEASE... 💖</h2>
   <div class="sorry-word">SORRY</div>
 
-  <p style="margin-top:18px"><b>Anuska, meri pyaari best friend,</b> 🌷</p>
+  <img class="photo" src="2/1.jpg" alt="Anushka ki photo"
+       onerror="this.style.display='none'">
+
+  <p style="margin-top:18px"><b>Anushka, meri pyaari best friend,</b> 🌷</p>
   <p style="margin-top:12px">
     Tumse dosti mere liye bahut special hai.
     Tumhare saath hasi-mazaak karna,
@@ -179,7 +168,7 @@ button:focus-visible{outline:3px solid #8e3568;outline-offset:4px}
     toh sach mein dil se sorry.
     Mera intention kabhi tumhe dukh dena
     nahi tha. Please ek baar mujhe maaf
-    kar do, meri Anuu. 🫶
+    kar do, meri Annu. 🫶
   </p>
   <p style="margin-top:12px">
     Tum meri best friend ho aur hamesha
@@ -188,7 +177,7 @@ button:focus-visible{outline:3px solid #8e3568;outline-offset:4px}
   </p>
 
   <div class="big-heart">💖</div>
-  <button class="close-btn" onclick="closeCard()">Anuu smile please 😊</button>
+  <button class="close-btn" onclick="closeCard()">Annu ki smile please 😊</button>
 </div>
 
 <script>
